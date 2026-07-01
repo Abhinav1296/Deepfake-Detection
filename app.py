@@ -509,13 +509,15 @@ threading.Thread(target=_cleanup_old_jobs, daemon=True).start()
 # ─────────────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 7860))
     log.info("=" * 60)
     log.info("  TriGuard-DF Flask Server")
-    log.info("  http://127.0.0.1:5000")
+    log.info(f"  http://0.0.0.0:{port}")
     log.info("=" * 60)
     app.run(
         host="0.0.0.0",
-        port=5000,
-        debug=False,    # Keep False — model loads once, debug reloads it twice
-        threaded=True,  # Required for batch polling to work
+        port=port,
+        debug=False,
+        threaded=True,
     )
