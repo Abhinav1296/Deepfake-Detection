@@ -1,11 +1,4 @@
-﻿---
-title: Deepfake Detection
-sdk: docker
-app_port: 7860
-pinned: false
----
-
-<div align="center">
+﻿<div align="center">
 
 <img src="static/images/hacker.png" alt="TriGuard-DF Logo" width="180"/>
 
