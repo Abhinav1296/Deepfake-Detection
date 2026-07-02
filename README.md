@@ -427,9 +427,4 @@ Released under the [MIT License](LICENSE) — free to use, modify, and deploy. J
 
 <br/>
 
-```
-[END OF README]
-[PRESS ANY KEY TO DETECT DEEPFAKES]
-```
-
 </div>
